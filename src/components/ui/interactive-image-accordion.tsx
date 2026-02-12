@@ -25,7 +25,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 2,
     name: "Carlos Henrique",
-    role: "HEAD de IA e Sistemas",
+    role: "Head de IA",
     bio: "Especialista em integração, CRM e Inteligência Artificial. Construtor de sistemas NOCODE e especialista em N8N.",
     imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
   },
