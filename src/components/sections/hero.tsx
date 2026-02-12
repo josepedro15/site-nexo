@@ -25,7 +25,7 @@ const heroData = {
       text: "WhatsApp",
       href: WHATSAPP_URL,
       variant: "outline" as const,
-      className: "border-green-200 bg-green-50 hover:bg-green-100 text-green-800",
+      className: "border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary",
       icon: <MessageCircle className="h-5 w-5" />,
     },
   ],

@@ -76,7 +76,7 @@ export function HeroSection9({
     >
       {/* Background Shapes */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-[20%] -right-[10%] w-[1000px] h-[1000px] bg-blue-50/50 rounded-full blur-3xl opacity-60" />
+        <div className="absolute -top-[20%] -right-[10%] w-[1000px] h-[1000px] bg-primary/10 rounded-full blur-3xl opacity-60" />
         <div className="absolute bottom-[10%] left-[10%] w-[600px] h-[600px] bg-slate-100/50 rounded-full blur-3xl opacity-60" />
       </div>
 
@@ -93,7 +93,7 @@ export function HeroSection9({
               <motion.div variants={itemVariants} className="mb-6">
                 <Badge
                   variant="outline"
-                  className="bg-blue-50 text-primary border-blue-100 px-4 py-1 text-sm font-medium"
+                  className="bg-primary/10 text-primary border-primary/30 px-4 py-1 text-sm font-medium"
                 >
                   {badge}
                 </Badge>
@@ -121,7 +121,7 @@ export function HeroSection9({
                     key={index}
                     variant={action.variant ?? "default"}
                     size="xl"
-                    className={cn("font-semibold shadow-lg shadow-blue-500/20", action.className)}
+                    className={cn("font-semibold shadow-lg shadow-primary/20", action.className)}
                     asChild
                   >
                     <Link
@@ -176,17 +176,17 @@ export function HeroSection9({
             animate="visible"
           >
             <motion.div
-              className="absolute -top-4 left-1/4 h-16 w-16 rounded-full bg-blue-200/50"
+              className="absolute -top-4 left-1/4 h-16 w-16 rounded-full bg-primary/30"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
             <motion.div
-              className="absolute bottom-0 right-1/4 h-12 w-12 rounded-lg bg-primary/20"
+              className="absolute bottom-0 right-1/4 h-12 w-12 rounded-lg bg-primary/15"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
             />
             <motion.div
-              className="absolute bottom-1/4 left-4 h-6 w-6 rounded-full bg-green-200/50"
+              className="absolute bottom-1/4 left-4 h-6 w-6 rounded-full bg-primary/30"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
             />

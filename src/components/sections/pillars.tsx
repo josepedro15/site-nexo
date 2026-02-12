@@ -62,7 +62,7 @@ export function Pillars() {
     <section id="solucoes" className="py-12 sm:py-16 bg-white relative overflow-hidden">
       <div className="section-container">
         <div className="text-center mb-8 lg:mb-10 space-y-3">
-          <Badge variant="outline" className="text-blue-600 border-blue-100 bg-blue-50">
+          <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
             O que entregamos
           </Badge>
           <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900">

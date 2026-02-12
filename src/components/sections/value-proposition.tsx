@@ -56,7 +56,7 @@ export function ValueProposition() {
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto mb-16"
         >
-          <Badge variant="outline" className="bg-white text-blue-600 border-blue-100 mb-6">
+          <Badge variant="outline" className="bg-white text-primary border-primary/30 mb-6">
             O Ecossistema Nexo
           </Badge>
           <h2 id="ecosystem-title" className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1] px-1">
@@ -90,10 +90,10 @@ export function ValueProposition() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex-1 min-w-0 bg-white rounded-xl sm:rounded-2xl border border-slate-100 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-blue-100 transition-all group"
+                    className="flex-1 min-w-0 bg-white rounded-xl sm:rounded-2xl border border-slate-100 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all group"
                   >
                     <div className="flex flex-col h-full">
-                      <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
                         <Icon className="w-6 h-6" />
                       </div>
                       <span className="text-xs font-semibold text-primary uppercase tracking-wider">
@@ -132,7 +132,7 @@ export function ValueProposition() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0 w-full sm:w-auto">
-            <Button size="xl" className="shadow-lg shadow-blue-500/20 font-semibold" asChild>
+            <Button size="xl" className="shadow-lg shadow-primary/20 font-semibold" asChild>
               <Link href="#contato" className="inline-flex items-center">
                 Falar com Especialista
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -141,7 +141,7 @@ export function ValueProposition() {
             <Button
               size="xl"
               variant="outline"
-              className="font-semibold border-green-200 bg-green-50 hover:bg-green-100 text-green-800"
+              className="font-semibold border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary"
               asChild
             >
               <Link href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">

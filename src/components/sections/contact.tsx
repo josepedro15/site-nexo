@@ -72,7 +72,7 @@ export function Contact() {
 
               <Button
                 size="xl"
-                className="w-full mb-6 bg-green-600 hover:bg-green-700 text-white font-semibold h-14 text-base"
+                className="w-full mb-6 bg-primary hover:bg-primary/90 text-white font-semibold h-14 text-base"
                 asChild
               >
                 <Link href={`${whatsappBaseUrl}?text=${encodeURIComponent("Olá! Gostaria de falar com um especialista sobre acelerar minhas vendas.")}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
@@ -193,8 +193,8 @@ export function Contact() {
               <h3 className="text-lg font-semibold text-slate-900 mb-4">Informações de Contato</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-green-600" />
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="font-medium text-slate-700">WhatsApp</p>
@@ -235,7 +235,7 @@ export function Contact() {
                 {whyChooseNexo.map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <Check className="w-5 h-5 shrink-0 mt-0.5" />
-                    <span className="text-sm text-blue-50 break-words">{item}</span>
+                    <span className="text-sm text-white/90 break-words">{item}</span>
                   </li>
                 ))}
               </ul>

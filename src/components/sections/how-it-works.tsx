@@ -37,7 +37,7 @@ export function HowItWorks() {
     <section id="metodologia" className="py-16 sm:py-24 bg-white relative overflow-hidden">
       <div className="section-container">
         <div className="text-center mb-16 lg:mb-20 space-y-4">
-          <Badge variant="outline" className="text-blue-600 border-blue-100 bg-blue-50">
+          <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
             Metodologia
           </Badge>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900">
@@ -61,11 +61,11 @@ export function HowItWorks() {
               viewport={{ once: true }}
               className="relative flex flex-col items-center text-center group"
             >
-              <div className="w-24 h-24 rounded-2xl bg-white border-2 border-slate-100 flex items-center justify-center mb-6 shadow-sm group-hover:border-blue-500 group-hover:shadow-blue-200 transition-all duration-300 relative z-10">
-                <div className="w-16 h-16 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <div className="w-24 h-24 rounded-2xl bg-white border-2 border-slate-100 flex items-center justify-center mb-6 shadow-sm group-hover:border-primary group-hover:shadow-primary/30 transition-all duration-300 relative z-10">
+                <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <step.icon className="w-8 h-8" />
                 </div>
-                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center text-sm font-bold shadow-md">
+                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-neutral-900 text-white flex items-center justify-center text-sm font-bold shadow-md">
                   {index + 1}
                 </div>
               </div>

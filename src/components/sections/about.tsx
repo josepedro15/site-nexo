@@ -21,7 +21,7 @@ export function About() {
   return (
     <section id="sobre" className="py-16 sm:py-24 bg-white relative overflow-hidden">
       {/* Decoração sutil */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="section-container relative z-10">
@@ -33,7 +33,7 @@ export function About() {
             viewport={{ once: true }}
             className="max-w-xl"
           >
-            <Badge variant="outline" className="text-blue-600 border-blue-100 bg-blue-50">
+            <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
               Quem Somos
             </Badge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mt-4 leading-[1.1]">
@@ -61,7 +61,7 @@ export function About() {
               return (
                 <div
                   key={i}
-                  className="flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-slate-50 border border-slate-100 min-w-0 w-full sm:flex-1 sm:max-w-[220px] hover:border-blue-100 hover:bg-blue-50/30 transition-colors group"
+                  className="flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-slate-50 border border-slate-100 min-w-0 w-full sm:flex-1 sm:max-w-[220px] hover:border-primary/30 hover:bg-primary/5 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Icon className="w-6 h-6" />

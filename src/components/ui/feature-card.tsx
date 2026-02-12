@@ -23,7 +23,7 @@ export function FeatureCard({
     <Card
       className={cn(
         "relative h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group overflow-hidden border-slate-100 bg-white",
-        highlight ? "shadow-lg ring-1 ring-blue-100" : "shadow-sm",
+        highlight ? "shadow-lg ring-1 ring-primary/30" : "shadow-sm",
         className
       )}
     >
@@ -31,7 +31,7 @@ export function FeatureCard({
         <div className={cn(
           "rounded-xl flex items-center justify-center transition-colors shrink-0",
           compact ? "w-10 h-10 mb-3" : "w-12 h-12 mb-4",
-          highlight ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30" : "bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white"
+          highlight ? "bg-primary text-white shadow-lg shadow-primary/30" : "bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white"
         )}>
           <Icon className={compact ? "w-5 h-5" : "w-6 h-6"} />
         </div>

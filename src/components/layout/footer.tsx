@@ -5,7 +5,7 @@ import { WHATSAPP_URL, SOCIAL } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer role="contentinfo" className="bg-slate-950 border-t border-slate-900 py-12 sm:py-16 text-slate-400 overflow-hidden">
+    <footer role="contentinfo" className="bg-neutral-950 border-t border-neutral-900 py-12 sm:py-16 text-slate-400 overflow-hidden">
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-12 mb-10 sm:mb-12">
           {/* Brand */}
@@ -13,13 +13,13 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <span className="text-2xl font-bold tracking-tighter text-white">
                 Nexo
-                <span className="text-blue-600">.</span>
+                <span className="text-primary">.</span>
               </span>
             </Link>
             <p className="max-w-xs text-slate-500 leading-relaxed">
               Aceleradora de Vendas focada em gerar ROI real através de tecnologia e capacitação humana.
             </p>
-            <Button size="lg" className="mt-4 bg-green-600 hover:bg-green-700 text-white" asChild>
+            <Button size="lg" className="mt-4 bg-primary hover:bg-primary/90 text-white" asChild>
               <Link href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Falar no WhatsApp
@@ -39,7 +39,7 @@ export function Footer() {
                 { label: "Contato", href: "#contato" },
               ].map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="hover:text-blue-500 transition-colors">
+                  <Link href={link.href} className="hover:text-primary transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -62,7 +62,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950"
+                  className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-neutral-950"
                 >
                   <Icon className="w-5 h-5" aria-hidden />
                 </Link>
@@ -72,7 +72,7 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <div className="border-t border-neutral-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <p>
             © {new Date().getFullYear()} Nexo Aceleradora. Todos os direitos reservados.
           </p>

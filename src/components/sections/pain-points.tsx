@@ -36,7 +36,7 @@ export function PainPoints() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/30 transition-all"
             >
               <span className="text-slate-400 text-lg font-medium">?</span>
               <p className="text-slate-700 font-medium">{point}</p>
@@ -65,7 +65,7 @@ export function PainPoints() {
                 <Calendar className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button size="xl" variant="outline" className="group font-semibold border-green-200 bg-green-50 hover:bg-green-100 text-green-800" asChild>
+            <Button size="xl" variant="outline" className="group font-semibold border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary" asChild>
               <Link
                 href={WHATSAPP_URL}
                 target="_blank"

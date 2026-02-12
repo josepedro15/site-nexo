@@ -62,7 +62,7 @@ export function Header() {
 
         {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
-          <Button className="hidden md:flex font-semibold shadow-lg shadow-blue-500/20" size="lg" asChild>
+          <Button className="hidden md:flex font-semibold shadow-lg shadow-primary/20" size="lg" asChild>
             <Link href="#contato">Falar com Especialista</Link>
           </Button>
 

@@ -34,7 +34,7 @@ const teamMembers: TeamMember[] = [
     name: "José Pedro",
     role: "HEAD de Sistemas",
     bio: "Arquiteturas de Sistemas com IA, automações e integrações escaláveis (n8n & APIs).",
-    imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://drive.google.com/thumbnail?id=1k2F7V0W5YebDIdQzAhWxb9UFantKhqWw&sz=w800",
   },
   {
     id: 4,
@@ -128,7 +128,7 @@ export function TeamAccordion() {
       <div className="section-container">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 sm:gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 text-center lg:text-left order-2 lg:order-1 space-y-6">
-            <Badge variant="outline" className="text-blue-600 border-blue-100 bg-blue-50">
+            <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
               Quem faz acontecer
             </Badge>
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
@@ -159,7 +159,7 @@ export function TeamAccordion() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-slate-900 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-slate-800 transition-colors duration-300"
+                className="inline-flex items-center justify-center gap-2 bg-neutral-900 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-neutral-800 transition-colors duration-300"
               >
                 <MessageCircle className="w-5 h-5" />
                 Falar com a Equipe

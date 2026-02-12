@@ -45,7 +45,7 @@ export function Testimonials() {
     <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
       <div className="section-container">
         <div className="text-center mb-16 space-y-4">
-          <Badge variant="outline" className="text-blue-600 border-blue-100 bg-blue-50">
+          <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
             Depoimentos
           </Badge>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900">
@@ -66,7 +66,7 @@ export function Testimonials() {
               viewport={{ once: true }}
               className="bg-slate-50 rounded-2xl border border-slate-100 p-6 sm:p-8 flex flex-col overflow-hidden"
             >
-              <Quote className="w-10 h-10 text-blue-200 mb-4" />
+              <Quote className="w-10 h-10 text-primary/70 mb-4" />
               <p className="text-slate-700 leading-relaxed mb-6 italic">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
