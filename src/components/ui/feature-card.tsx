@@ -8,6 +8,7 @@ interface FeatureCardProps {
   icon: LucideIcon;
   className?: string;
   highlight?: boolean;
+  compact?: boolean;
 }
 
 export function FeatureCard({
@@ -16,6 +17,7 @@ export function FeatureCard({
   icon: Icon,
   className,
   highlight = false,
+  compact = false,
 }: FeatureCardProps) {
   return (
     <Card
@@ -25,17 +27,18 @@ export function FeatureCard({
         className
       )}
     >
-      <CardHeader>
+      <CardHeader className={compact ? "p-4 pb-0" : undefined}>
         <div className={cn(
-          "w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors",
+          "rounded-xl flex items-center justify-center transition-colors shrink-0",
+          compact ? "w-10 h-10 mb-3" : "w-12 h-12 mb-4",
           highlight ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30" : "bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white"
         )}>
-          <Icon className="w-6 h-6" />
+          <Icon className={compact ? "w-5 h-5" : "w-6 h-6"} />
         </div>
-        <CardTitle className="text-xl mb-2 text-slate-900">{title}</CardTitle>
+        <CardTitle className={cn("text-slate-900", compact ? "text-lg mb-1" : "text-xl mb-2")}>{title}</CardTitle>
       </CardHeader>
-      <CardContent>
-        <CardDescription className="text-slate-500 text-base leading-relaxed">
+      <CardContent className={compact ? "p-4 pt-0" : undefined}>
+        <CardDescription className={cn("text-slate-500 leading-relaxed", compact ? "text-sm" : "text-base")}>
           {description}
         </CardDescription>
       </CardContent>
