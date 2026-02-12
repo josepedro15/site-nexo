@@ -9,7 +9,6 @@ import { CALENDLY_URL, CONTACT } from "@/lib/constants";
 const whyChooseNexo = [
   "Especialistas em Tráfego Pago (Google + Meta) e IA no WhatsApp",
   "R$ 700M+ em vendas geradas para mais de 200 empresas",
-  "Gerente de contas exclusivo para cada cliente",
   "Ecossistema completo: Tráfego, IA, CRM e Treinamento",
   "Consultoria gratuita para entender seu momento",
 ];
@@ -68,7 +67,7 @@ export function Contact() {
           >
             <div className="bg-white rounded-2xl border border-slate-100 shadow-xl p-5 sm:p-6 md:p-10 overflow-hidden">
               <h2 id="contact-title" className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-5 sm:mb-6">
-                Consultoria Gratuita + Gerente Exclusivo
+                Consultoria Gratuita
               </h2>
 
               <Button
@@ -172,7 +171,7 @@ export function Contact() {
                 </div>
 
                 <Button size="xl" className="w-full font-semibold h-14" type="submit">
-                  Quero Meu Gerente Exclusivo Agora
+                  Quero Falar com um Especialista
                 </Button>
 
                 <p className="text-xs text-slate-400">
