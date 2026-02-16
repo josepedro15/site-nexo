@@ -199,14 +199,13 @@ export function HowItWorks() {
             id="metodologia-title"
             className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]"
           >
-            Não somos agência. É{" "}
-            <span className="text-primary">engenharia comercial</span>.
+            <span className="text-primary">Metodologia Integrada</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 font-medium max-w-2xl mx-auto">
             Tecnologia para escalar. Expertise humana para fechar.
           </p>
           <p className="text-slate-500 max-w-xl mx-auto text-base">
-            Do anúncio ao caixa — resultado com dados, não com promessa.
+            Não somos agência: é engenharia comercial. Os 5 pilares funcionam em ciclo — aquisição e retenção, tecnologia e expertise humana integradas. Do anúncio ao caixa, com dados, não com promessa.
           </p>
         </motion.div>
 
