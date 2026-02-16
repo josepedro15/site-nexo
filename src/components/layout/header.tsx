@@ -8,10 +8,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Soluções", href: "#solucoes" },
   { name: "Metodologia", href: "#metodologia" },
-  { name: "Quem Somos", href: "#sobre" },
+  { name: "Soluções", href: "#solucoes" },
   { name: "Resultados", href: "#resultados" },
+  { name: "Quem Somos", href: "#sobre" },
   { name: "Contato", href: "#contato" },
 ];
 

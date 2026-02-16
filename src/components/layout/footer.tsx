@@ -32,10 +32,10 @@ export function Footer() {
             <h3 className="font-bold text-white mb-6">Links Rápidos</h3>
             <ul className="space-y-3">
               {[
-                { label: "Soluções", href: "#solucoes" },
-                { label: "Quem Somos", href: "#sobre" },
                 { label: "Metodologia", href: "#metodologia" },
+                { label: "Soluções", href: "#solucoes" },
                 { label: "Resultados", href: "#resultados" },
+                { label: "Quem Somos", href: "#sobre" },
                 { label: "Contato", href: "#contato" },
               ].map((link) => (
                 <li key={link.label}>

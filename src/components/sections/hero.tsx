@@ -13,7 +13,7 @@ const heroData = {
     </>
   ),
   subtitle:
-    "Não somos agência. Unimos Tráfego Pago, IA no WhatsApp, CRM e Treinamento para gerar ROI real e previsível.",
+    "Tráfego Pago, IA no WhatsApp, CRM e Treinamento integrados para gerar ROI real e previsível.",
   actions: [
     {
       text: "Quero Acelerar Minhas Vendas",

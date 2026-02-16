@@ -59,9 +59,9 @@ const features = [
 
 export function Pillars() {
   return (
-    <section id="solucoes" className="py-12 sm:py-16 bg-white relative overflow-hidden">
+    <section id="solucoes" className="py-16 sm:py-24 bg-white relative overflow-hidden">
       <div className="section-container">
-        <div className="text-center mb-8 lg:mb-10 space-y-3">
+        <div className="text-center mb-12 lg:mb-16 space-y-3">
           <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
             O que entregamos
           </Badge>

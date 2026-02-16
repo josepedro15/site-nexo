@@ -6,7 +6,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    company: "Cliente Varejo",
+    company: "Empresa de Varejo",
     sector: "Varejo",
     quote: "A Nexo transformou nossa operação comercial. Em 3 meses, passamos a ter previsibilidade real nas vendas.",
     metrics: {
@@ -17,7 +17,7 @@ const testimonials = [
     },
   },
   {
-    company: "Cliente B2B",
+    company: "Empresa B2B",
     sector: "Serviços B2B",
     quote: "O Agente de IA no WhatsApp trouxe agilidade e nossos leads nunca mais ficaram sem resposta.",
     metrics: {
@@ -28,7 +28,7 @@ const testimonials = [
     },
   },
   {
-    company: "Cliente E-commerce",
+    company: "Empresa E-commerce",
     sector: "E-commerce",
     quote: "Tráfego + CRM + Treinamento em um só lugar. Finalmente paramos de jogar dinheiro fora.",
     metrics: {

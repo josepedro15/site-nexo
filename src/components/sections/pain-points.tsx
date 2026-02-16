@@ -24,7 +24,7 @@ export function PainPoints() {
             Qual é a sua realidade hoje?
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">
-            Se você se identifica com alguma dessas situações, podemos ajudar a transformar.
+            Se você se identifica com alguma dessas situações, nossa metodologia pode ajudar a transformar.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export function PainPoints() {
           className="text-center space-y-6"
         >
           <p className="text-xl font-bold text-slate-900">
-            Tome uma decisão hoje mesmo. É possível sim vender mais com método.
+            Pronto para o próximo passo? É possível vender mais com método.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="xl" className="group font-semibold" asChild>

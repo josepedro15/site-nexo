@@ -45,7 +45,6 @@ function Counter({
   const springValue = useSpring(0, {
     damping: 30,
     stiffness: 100,
-    duration: 2,
   });
 
   useEffect(() => {

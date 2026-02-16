@@ -19,7 +19,7 @@ const stats = [
 
 export function About() {
   return (
-    <section id="sobre" className="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <section id="sobre" className="py-16 sm:py-24 bg-slate-50 relative overflow-hidden">
       {/* Decoração sutil */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
@@ -41,8 +41,7 @@ export function About() {
               <span className="text-primary">& Tecnologia</span>
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mt-6">
-              A Nexo nasceu da necessidade de unir estratégias de vendas validadas com tecnologia de ponta.{" "}
-              <strong className="text-slate-800">Não somos agência</strong> — somos parceiro de crescimento.
+              A Nexo nasceu da necessidade de unir estratégias de vendas validadas com tecnologia de ponta. Somos parceiro de crescimento, não prestador de serviço pontual.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed mt-4">
               Eliminamos a incerteza do seu processo comercial. Máquinas de vendas previsíveis, não promessas.
@@ -61,7 +60,7 @@ export function About() {
               return (
                 <div
                   key={i}
-                  className="flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-slate-50 border border-slate-100 min-w-0 w-full sm:flex-1 sm:max-w-[220px] hover:border-primary/30 hover:bg-primary/5 transition-colors group"
+                  className="flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-white border border-slate-100 min-w-0 w-full sm:flex-1 sm:max-w-[220px] hover:border-primary/30 hover:bg-primary/5 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Icon className="w-6 h-6" />

@@ -42,13 +42,14 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const data = {
-      name: (form.querySelector("#name") as HTMLInputElement)?.value || "",
-      email: (form.querySelector("#email") as HTMLInputElement)?.value || "",
-      phone: (form.querySelector("#phone") as HTMLInputElement)?.value || "",
-      company: (form.querySelector("#company") as HTMLInputElement)?.value || "",
-      area: (form.querySelector("#area") as HTMLSelectElement)?.value || "",
-      message: (form.querySelector("#message") as HTMLTextAreaElement)?.value || "",
+    const formData = new FormData(form);
+    const data: Record<string, string> = {
+      name: (formData.get("name") as string) || "",
+      email: (formData.get("email") as string) || "",
+      phone: (formData.get("phone") as string) || "",
+      company: (formData.get("company") as string) || "",
+      area: (formData.get("area") as string) || "",
+      message: (formData.get("message") as string) || "",
     };
     const msg = buildWhatsAppMessage(data);
     window.open(`${whatsappBaseUrl}?text=${msg}`, "_blank");
@@ -110,6 +111,7 @@ export function Contact() {
                     placeholder="seu@email.com"
                     required
                     autoComplete="email"
+                    maxLength={254}
                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors"
                   />
                 </div>
@@ -124,6 +126,9 @@ export function Contact() {
                     placeholder="(11) 99999-9999"
                     required
                     autoComplete="tel"
+                    minLength={10}
+                    pattern="^[\d\s\-\(\)\+]{10,25}$"
+                    title="Informe um número válido com DDD (ex: 11 99999-9999)"
                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors"
                   />
                 </div>
@@ -147,6 +152,7 @@ export function Contact() {
                   </label>
                   <select
                     id="area"
+                    name="area"
                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors bg-white"
                   >
                     {areas.map((opt) => (

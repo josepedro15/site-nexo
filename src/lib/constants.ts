@@ -1,3 +1,4 @@
+// IMPORTANTE: Atualizar com dados reais antes de produção
 export const WHATSAPP_URL =
   "https://wa.me/5511999999999?text=Olá! Acabei de acessar o site da Nexo e gostaria de falar com um especialista sobre acelerar minhas vendas.";
 
