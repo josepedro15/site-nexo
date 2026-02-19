@@ -170,11 +170,12 @@ export function HeroSection9({
 
           {/* Right Column: Image Collage */}
           <motion.div
-            className="relative h-[320px] w-full min-w-0 sm:h-[420px] lg:h-[500px]"
+            className="relative h-[320px] w-full min-w-0 sm:h-[420px] lg:h-[480px]"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
+            {/* Elementos decorativos flutuantes */}
             <motion.div
               className="absolute -top-4 left-1/4 h-16 w-16 rounded-full bg-primary/30"
               animate={{ y: [0, -8, 0] }}
@@ -185,58 +186,31 @@ export function HeroSection9({
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
             />
-            <motion.div
-              className="absolute bottom-1/4 left-4 h-6 w-6 rounded-full bg-primary/30"
-              animate={{ y: [0, -8, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            />
 
+            {/* Imagem 1 — maior, topo-direita */}
             <motion.div
-              className="absolute left-1/2 top-0 h-48 w-48 -translate-x-1/2 rounded-2xl bg-white p-2 shadow-xl border border-slate-100 sm:h-64 sm:w-64"
-              style={{ transformOrigin: "bottom center" }}
+              className="absolute right-0 top-0 w-[88%] rounded-2xl bg-white p-2 shadow-2xl border border-slate-100"
               variants={imageVariants}
             >
               <img
                 src={images[0]}
-                alt="Vendas e crescimento"
-                className="h-full w-full rounded-xl object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).onerror = null;
-                  (e.target as HTMLImageElement).src =
-                    "https://placehold.co/400x400/1e293b/94a3b8?text=Nexo";
-                }}
+                alt="Dashboard CRPRO"
+                className="w-full rounded-xl object-cover object-top"
+                style={{ aspectRatio: "16/9" }}
               />
             </motion.div>
+
+            {/* Imagem 2 — menor, sobreposta embaixo-esquerda */}
             <motion.div
-              className="absolute right-0 top-1/3 h-40 w-40 rounded-2xl bg-white p-2 shadow-xl border border-slate-100 sm:h-56 sm:w-56"
-              style={{ transformOrigin: "left center" }}
-              variants={imageVariants}
-            >
-              <img
-                src={images[1]}
-                alt="Equipe e tecnologia"
-                className="h-full w-full rounded-xl object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).onerror = null;
-                  (e.target as HTMLImageElement).src =
-                    "https://placehold.co/400x400/1e293b/94a3b8?text=Nexo";
-                }}
-              />
-            </motion.div>
-            <motion.div
-              className="absolute bottom-0 left-0 h-32 w-32 rounded-2xl bg-white p-2 shadow-xl border border-slate-100 sm:h-48 sm:w-48"
+              className="absolute bottom-0 left-0 w-[55%] rounded-2xl bg-white p-2 shadow-2xl border border-slate-100"
               style={{ transformOrigin: "top right" }}
               variants={imageVariants}
             >
               <img
-                src={images[2]}
-                alt="Resultados e ROI"
-                className="h-full w-full rounded-xl object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).onerror = null;
-                  (e.target as HTMLImageElement).src =
-                    "https://placehold.co/400x400/1e293b/94a3b8?text=Nexo";
-                }}
+                src={images[1]}
+                alt="Dashboard MetricsIA"
+                className="w-full rounded-xl object-cover object-top"
+                style={{ aspectRatio: "16/9" }}
               />
             </motion.div>
           </motion.div>

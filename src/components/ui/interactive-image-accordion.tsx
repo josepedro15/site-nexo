@@ -20,49 +20,49 @@ const teamMembers: TeamMember[] = [
     name: "Otto Hartmann",
     role: "Founder",
     bio: "20+ anos transformando vendas. Criador de metodologias: Método BD, Sistema Varejo Pró e Engrenagem comercial.",
-    imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/team/otto.png",
   },
   {
     id: 2,
     name: "Carlos Henrique",
     role: "Head de IA",
     bio: "Especialista em integração, CRM e Inteligência Artificial. Construtor de sistemas NOCODE e especialista em N8N.",
-    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/team/carlos.png",
   },
   {
     id: 3,
     name: "José Pedro",
     role: "HEAD de Sistemas",
     bio: "Arquiteturas de Sistemas com IA, automações e integrações escaláveis (n8n & APIs).",
-    imageUrl: "https://drive.google.com/thumbnail?id=1k2F7V0W5YebDIdQzAhWxb9UFantKhqWw&sz=w800",
+    imageUrl: "/team/jose-pedro.jpg",
   },
   {
     id: 4,
     name: "Liara Alves",
     role: "HEAD de Tráfego",
     bio: "Expert em Google Meu Negócio, Ecommerce e Meta ADS.",
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/team/liara.png",
   },
   {
     id: 5,
     name: "Lucas de Lucas",
     role: "HEAD de CS",
     bio: "Especialista em Sucesso do Cliente e estrategista digital.",
-    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/team/lucas.png",
   },
   {
     id: 6,
     name: "Yuri Luçardo",
     role: "HEAD de Growth",
     bio: "Estrategista comercial e especialista em CopyWriter.",
-    imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/team/yuri.png",
   },
   {
     id: 7,
     name: "Daniel Volpi",
     role: "HEAD Comercial",
     bio: "Master Trainer em vendas e especialista em Persuasão.",
-    imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/team/daniel.png",
   },
 ];
 
@@ -75,34 +75,42 @@ function AccordionItem({
   isActive: boolean;
   onMouseEnter: () => void;
 }) {
+  const initials = item.name
+    .split(" ")
+    .map((n) => n[0])
+    .slice(0, 2)
+    .join("");
+
   return (
     <div
       className={`
         relative h-[400px] md:h-[450px] rounded-2xl overflow-hidden cursor-pointer
-        transition-all duration-700 ease-in-out
+        transition-all duration-700 ease-in-out bg-slate-800
         ${isActive ? "w-[280px] sm:w-[320px] md:w-[400px]" : "w-[50px] sm:w-[60px]"}
       `}
       onMouseEnter={onMouseEnter}
     >
+      {/* Fallback com iniciais — sempre visível atrás da foto */}
+      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900">
+        <span className="text-5xl font-bold text-slate-500 select-none">{initials}</span>
+      </div>
+
       <img
         src={item.imageUrl}
         alt={item.name}
         className="absolute inset-0 w-full h-full object-cover"
         onError={(e) => {
-          (e.target as HTMLImageElement).onerror = null;
-          (e.target as HTMLImageElement).src =
-            "https://placehold.co/400x450/1e293b/94a3b8?text=Photo";
+          (e.target as HTMLImageElement).style.display = "none";
         }}
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
       <div
         className={`
           absolute text-white transition-all duration-300 ease-in-out
-          ${
-            isActive
-              ? "bottom-6 left-4 right-4 text-left"
-              : "bottom-24 left-1/2 -translate-x-1/2 rotate-90 origin-center whitespace-nowrap"
+          ${isActive
+            ? "bottom-6 left-4 right-4 text-left"
+            : "bottom-24 left-1/2 -translate-x-1/2 rotate-90 origin-center whitespace-nowrap"
           }
         `}
       >
@@ -137,7 +145,7 @@ export function TeamAccordion() {
               em vendas
             </h2>
             <p className="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Tráfego, IA, CRM e Treinamento — cada área com um expert dedicado. 
+              Tráfego, IA, CRM e Treinamento — cada área com um expert dedicado.
               Não somos consultores teóricos: aplicamos na prática o que ensinamos.
             </p>
             <ul className="text-slate-600 space-y-2 max-w-xl mx-auto lg:mx-0">

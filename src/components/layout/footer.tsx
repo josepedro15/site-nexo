@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Instagram, Linkedin, Twitter, MessageCircle } from "lucide-react";
+import Image from "next/image";
+import { Instagram, Linkedin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WHATSAPP_URL, SOCIAL } from "@/lib/constants";
 
@@ -10,14 +11,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-12 mb-10 sm:mb-12">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold tracking-tighter text-white">
-                Nexo
-                <span className="text-primary">.</span>
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo-nexo.svg"
+                alt="Nexo"
+                width={120}
+                height={40}
+                className="h-8 sm:h-10 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="max-w-xs text-slate-500 leading-relaxed">
-              Aceleradora de Vendas focada em gerar ROI real através de tecnologia e capacitação humana.
+              Engenharia comercial para empresas que levam vendas a sério.
             </p>
             <Button size="lg" className="mt-4 bg-primary hover:bg-primary/90 text-white" asChild>
               <Link href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
@@ -54,7 +58,6 @@ export function Footer() {
               {[
                 { Icon: Instagram, href: SOCIAL.instagram, label: "Instagram" },
                 { Icon: Linkedin, href: SOCIAL.linkedin, label: "LinkedIn" },
-                { Icon: Twitter, href: SOCIAL.twitter, label: "X (Twitter)" },
               ].map(({ Icon, href, label }) => (
                 <Link
                   key={label}

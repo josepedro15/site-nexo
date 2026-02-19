@@ -7,50 +7,50 @@ import { Badge } from "@/components/ui/badge";
 
 const features = [
   {
-    title: "Aquisição (Tráfego Pago)",
-    description: "Google Ads, Meta Ads e Google Meu Negócio. Criativos de alta conversão e visibilidade local.",
+    title: "Aquisição que dá ROI",
+    description: "Campanhas em Google Ads e Meta otimizadas com dados do seu CRM. Cada real investido rastreado até o fechamento.",
     icon: Target,
     highlight: false,
     delay: 0.05,
   },
   {
-    title: "Agente de IA (WhatsApp)",
-    description: "Vendedor digital 24/7 que atende, qualifica e agenda. Respostas instantâneas que convertem.",
+    title: "Nenhum lead fica sem resposta",
+    description: "IA no WhatsApp que atende em segundos, qualifica e já agenda com sua equipe. 24/7, sem perder oportunidade.",
     icon: MessageCircle,
     highlight: false,
     delay: 0.1,
   },
   {
-    title: "CRPRO (CRM Próprio)",
-    description: "Pipeline visual e dashboards em tempo real. Controle total de cada negociação.",
+    title: "Decisões com dados, não achismo",
+    description: "Pipeline visual, métricas em tempo real e previsão de receita. CRM que sua equipe realmente usa.",
     icon: LayoutDashboard,
     highlight: false,
     delay: 0.15,
   },
   {
-    title: "Capacitação Humana",
-    description: "Treinamento intensivo. A IA qualifica, sua equipe fecha a venda com técnica.",
+    title: "Sua equipe fecha melhor",
+    description: "Treinamento com metodologia comprovada. A IA entrega o lead pronto — seu vendedor fecha com técnica.",
     icon: Users,
     highlight: false,
     delay: 0.2,
   },
   {
-    title: "Landing Pages",
-    description: "Páginas convertedoras, responsivas e integradas ao CRM.",
+    title: "Páginas que convertem",
+    description: "Landing pages otimizadas, responsivas e integradas ao CRM. Do clique ao lead em segundos.",
     icon: FileText,
     highlight: false,
     delay: 0.25,
   },
   {
-    title: "Reuniões Quinzenais",
-    description: "Acompanhamento regular para alinhar expectativas e ajustar estratégias.",
+    title: "Alinhamento quinzenal",
+    description: "Reuniões de acompanhamento para ajustar estratégia com base em dados reais, não suposições.",
     icon: Calendar,
     highlight: false,
     delay: 0.35,
   },
   {
-    title: "Relatórios e Métricas",
-    description: "Dashboard em tempo real, relatórios mensais e análise de ROI.",
+    title: "Métricas que importam",
+    description: "Dashboard em tempo real e relatórios mensais. ROI visível, gargalos expostos, decisões rápidas.",
     icon: BarChart3,
     highlight: false,
     delay: 0.4,
@@ -63,13 +63,13 @@ export function Pillars() {
       <div className="section-container">
         <div className="text-center mb-12 lg:mb-16 space-y-3">
           <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
-            O que entregamos
+            O que muda na sua operação
           </Badge>
           <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900">
-            A Máquina de Vendas Completa
+            Engenharia de Vendas aplicada ao seu negócio
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto text-base">
-            Tecnologia de ponta com expertise humana para vendas previsíveis e escaláveis.
+            Cada peça do sistema foi projetada para gerar resultado mensurável — não entregáveis bonitos.
           </p>
         </div>
 

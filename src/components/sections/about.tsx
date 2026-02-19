@@ -34,17 +34,17 @@ export function About() {
             className="max-w-xl"
           >
             <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
-              Quem Somos
+              Por que existimos
             </Badge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mt-4 leading-[1.1]">
-              Experts em Growth{" "}
-              <span className="text-primary">& Tecnologia</span>
+              Construímos máquinas de vendas.{" "}
+              <span className="text-primary">Não vendemos promessas.</span>
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mt-6">
-              A Nexo nasceu da necessidade de unir estratégias de vendas validadas com tecnologia de ponta. Somos parceiro de crescimento, não prestador de serviço pontual.
+              A Nexo integra inteligência comercial e tecnologia para assumir a gestão completa da sua jornada de vendas. Atuamos como seu braço estratégico para auditar processos e identificar falhas ocultas — garantindo controle absoluto sobre cada etapa, do investimento em anúncios ao fechamento no caixa.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed mt-4">
-              Eliminamos a incerteza do seu processo comercial. Máquinas de vendas previsíveis, não promessas.
+              Integramos IA Generativa com CRM e auditamos 100% das conversas do seu time para identificar onde você está perdendo dinheiro. Substituímos a incerteza da sua operação por previsibilidade baseada em dados, não em promessas.
             </p>
           </motion.div>
 
@@ -60,7 +60,7 @@ export function About() {
               return (
                 <div
                   key={i}
-                  className="flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-white border border-slate-100 min-w-0 w-full sm:flex-1 sm:max-w-[220px] hover:border-primary/30 hover:bg-primary/5 transition-colors group"
+                  className="flex items-start gap-4 p-6 sm:p-8 rounded-2xl bg-white border border-slate-100 min-w-0 w-full sm:flex-1 sm:max-w-[280px] hover:border-primary/30 hover:bg-primary/5 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Icon className="w-6 h-6" />

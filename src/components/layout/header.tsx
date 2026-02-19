@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Metodologia", href: "#metodologia" },
@@ -40,11 +41,15 @@ export function Header() {
     >
       <div className="section-container flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 z-50">
-          <span className="text-2xl font-bold tracking-tighter text-slate-900">
-            Nexo
-            <span className="text-primary">.</span>
-          </span>
+        <Link href="/" className="flex items-center z-50">
+          <Image
+            src="/logo-nexo.svg"
+            alt="Nexo"
+            width={120}
+            height={40}
+            className="h-8 sm:h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

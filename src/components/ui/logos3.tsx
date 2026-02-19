@@ -1,22 +1,16 @@
 "use client";
 
-import AutoScroll from "embla-carousel-auto-scroll";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-interface Logo {
+export interface Logo {
   id: string;
   description: string;
   image: string;
   className?: string;
 }
 
-interface Logos3Props {
+export interface Logos3Props {
   heading?: string;
   badge?: string;
   subtitle?: string;
@@ -25,14 +19,14 @@ interface Logos3Props {
 }
 
 const defaultLogos: Logo[] = [
-  { id: "logo-1", description: "Google", image: "https://svgl.app/library/google-2015.svg", className: "h-7 w-auto opacity-70" },
-  { id: "logo-2", description: "Meta", image: "https://svgl.app/library/meta.svg", className: "h-7 w-auto opacity-70" },
-  { id: "logo-3", description: "WhatsApp", image: "https://svgl.app/library/whatsapp.svg", className: "h-7 w-auto opacity-70" },
-  { id: "logo-4", description: "Notion", image: "https://svgl.app/library/notion_wordmark_light.svg", className: "h-7 w-auto opacity-70" },
-  { id: "logo-5", description: "Slack", image: "https://svgl.app/library/slack_wordmark_light.svg", className: "h-7 w-auto opacity-70" },
-  { id: "logo-6", description: "OpenAI", image: "https://svgl.app/library/openai_wordmark_light.svg", className: "h-7 w-auto opacity-70" },
-  { id: "logo-7", description: "Stripe", image: "https://svgl.app/library/stripe_wordmark_light.svg", className: "h-7 w-auto opacity-70" },
-  { id: "logo-8", description: "Figma", image: "https://svgl.app/library/figma_wordmark_light.svg", className: "h-6 w-auto opacity-70" },
+  { id: "logo-1", description: "Google", image: "https://svgl.app/library/google-2015.svg" },
+  { id: "logo-2", description: "Meta", image: "https://svgl.app/library/meta.svg" },
+  { id: "logo-3", description: "WhatsApp", image: "https://svgl.app/library/whatsapp.svg" },
+  { id: "logo-4", description: "Notion", image: "https://svgl.app/library/notion_wordmark_light.svg" },
+  { id: "logo-5", description: "Slack", image: "https://svgl.app/library/slack_wordmark_light.svg" },
+  { id: "logo-6", description: "OpenAI", image: "https://svgl.app/library/openai_wordmark_light.svg" },
+  { id: "logo-7", description: "Stripe", image: "https://svgl.app/library/stripe_wordmark_light.svg" },
+  { id: "logo-8", description: "Figma", image: "https://svgl.app/library/figma_wordmark_light.svg" },
 ];
 
 const Logos3 = ({
@@ -42,15 +36,41 @@ const Logos3 = ({
   logos = defaultLogos,
   className,
 }: Logos3Props) => {
+  // Duplica para o efeito de loop infinito
+  const track = [...logos, ...logos];
+
   return (
-    <section className={cn("py-16 sm:py-24 bg-slate-50", className)} aria-labelledby="logos-heading">
-      <div className="section-container flex flex-col items-center text-center mb-8">
+    <section
+      className={cn("py-16 sm:py-24 bg-slate-50 overflow-hidden", className)}
+      aria-labelledby="logos-heading"
+    >
+      {/* Estilos inline para a animação marquee */}
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+          display: flex;
+          width: max-content;
+          animation: marquee 30s linear infinite;
+        }
+        .marquee-track:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+
+      {/* Header */}
+      <div className="section-container flex flex-col items-center text-center mb-12">
         {badge && (
           <Badge variant="outline" className="mb-4 text-primary border-primary/30 bg-white">
             {badge}
           </Badge>
         )}
-        <h2 id="logos-heading" className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900 max-w-2xl">
+        <h2
+          id="logos-heading"
+          className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900 max-w-2xl"
+        >
           {heading}
         </h2>
         {subtitle && (
@@ -59,32 +79,30 @@ const Logos3 = ({
           </p>
         )}
       </div>
-      <div className="pt-10 md:pt-16 lg:pt-20">
-        <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl">
-          <Carousel
-            opts={{ loop: true }}
-            plugins={[AutoScroll({ playOnInit: true, speed: 1 })]}
-          >
-            <CarouselContent className="ml-0">
-              {logos.map((logo) => (
-                <CarouselItem
-                  key={logo.id}
-                  className="flex basis-1/3 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
-                >
-                  <div className="mx-6 sm:mx-10 flex shrink-0 items-center justify-center">
-                    <img
-                      src={logo.image}
-                      alt={logo.description}
-                      loading="lazy"
-                      className={cn("grayscale hover:grayscale-0 transition-all", logo.className)}
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-slate-50 to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-slate-50 to-transparent" />
+
+      {/* Faixa de logos com bordas horizontais */}
+      <div className="relative border-y border-slate-200">
+        {/* Gradientes nas laterais para suavizar */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-50 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-slate-50 to-transparent" />
+
+        <div className="overflow-hidden">
+          <div className="marquee-track">
+            {track.map((logo, index) => (
+              <div
+                key={`${logo.id}-${index}`}
+                className="flex items-center justify-center bg-white border-r border-slate-200 px-12 py-8 group shrink-0"
+                style={{ minWidth: "220px" }}
+              >
+                <img
+                  src={logo.image}
+                  alt={logo.description}
+                  loading="lazy"
+                  className="h-44 w-auto max-w-[240px] object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -92,4 +110,3 @@ const Logos3 = ({
 };
 
 export { Logos3 };
-export type { Logo, Logos3Props };

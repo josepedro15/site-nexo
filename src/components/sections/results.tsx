@@ -82,10 +82,10 @@ export function Results() {
             Resultados Comprovados
           </Badge>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-white">
-            Números que falam por si
+            700 milhões de razões para confiar no método
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-            Aceleramos o crescimento de empresas reais com resultados mensuráveis.
+            Esses números são dos nossos clientes. Não de um slide de apresentação.
           </p>
         </div>
 

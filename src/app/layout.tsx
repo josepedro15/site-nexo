@@ -14,8 +14,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Nexo Aceleradora | Aceleradora de Vendas B2B e B2C",
   description:
-    "Não somos agência. Engenharia comercial completa: Tráfego Pago, IA no WhatsApp, CRM e Treinamento. R$ 700M+ em vendas geradas. Do anúncio ao caixa.",
-  keywords: ["aceleradora de vendas", "tráfego pago", "IA WhatsApp", "CRM", "treinamento comercial", "ROI vendas"],
+    "Não somos agência. Engenharia comercial completa: Aquisição, IA no WhatsApp, CRM e Treinamento. R$ 700M+ em vendas geradas. Do anúncio ao caixa.",
+  keywords: ["aceleradora de vendas", "aquisição", "IA WhatsApp", "CRM", "treinamento comercial", "ROI vendas"],
   authors: [{ name: "Nexo Aceleradora" }],
   openGraph: {
     title: "Nexo Aceleradora | Aceleradora de Vendas",

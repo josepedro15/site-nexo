@@ -2,15 +2,15 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Calendar, Phone, MapPin, Clock, Check } from "lucide-react";
+import { MessageCircle, Phone, MapPin, Clock, Check } from "lucide-react";
 import Link from "next/link";
-import { CALENDLY_URL, CONTACT } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 
 const whyChooseNexo = [
-  "Especialistas em Tráfego Pago (Google + Meta) e IA no WhatsApp",
+  "Engenharia Comercial: tráfego, IA, CRM e treinamento integrados",
   "R$ 700M+ em vendas geradas para mais de 200 empresas",
-  "Ecossistema completo: Tráfego, IA, CRM e Treinamento",
-  "Consultoria gratuita para entender seu momento",
+  "Diagnóstico real da sua operação antes de qualquer proposta",
+  "Poucas empresas por vez — é assim que mantemos a qualidade",
 ];
 
 const areas = [
@@ -68,7 +68,7 @@ export function Contact() {
           >
             <div className="bg-white rounded-2xl border border-slate-100 shadow-xl p-5 sm:p-6 md:p-10 overflow-hidden">
               <h2 id="contact-title" className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-5 sm:mb-6">
-                Consultoria Gratuita
+                Diagnóstico Comercial
               </h2>
 
               <Button
@@ -78,11 +78,11 @@ export function Contact() {
               >
                 <Link href={`${whatsappBaseUrl}?text=${encodeURIComponent("Olá! Gostaria de falar com um especialista sobre acelerar minhas vendas.")}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                   <MessageCircle className="mr-2 w-6 h-6" />
-                  Falar no WhatsApp Agora
+                  Iniciar Diagnóstico
                 </Link>
               </Button>
 
-              <p className="text-slate-500 text-sm mb-6">Ou preencha o formulário abaixo</p>
+              <p className="text-slate-500 text-sm mb-6">Responda em 2 minutos. Receba um diagnóstico da sua operação.</p>
 
               <form className="space-y-5" onSubmit={handleSubmit}>
                 <div>
@@ -177,7 +177,7 @@ export function Contact() {
                 </div>
 
                 <Button size="xl" className="w-full font-semibold h-14" type="submit">
-                  Quero Falar com um Especialista
+                  Enviar para análise
                 </Button>
 
                 <p className="text-xs text-slate-400">
@@ -247,12 +247,7 @@ export function Contact() {
               </ul>
             </div>
 
-            <Button variant="outline" size="lg" className="w-full" asChild>
-              <Link href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
-                <Calendar className="mr-2 w-5 h-5" />
-                Agendar Consultoria
-              </Link>
-            </Button>
+
           </motion.div>
         </div>
       </div>

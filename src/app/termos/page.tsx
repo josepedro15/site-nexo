@@ -36,7 +36,7 @@ export default function TermosPage() {
           <h2 className="text-xl font-semibold text-slate-900 mt-8">2. Serviços</h2>
           <p>
             A Nexo Aceleradora oferece consultoria e soluções em engenharia comercial, incluindo
-            tráfego pago, IA no WhatsApp, CRM e treinamento. Os detalhes dos serviços são definidos
+            aquisição, IA no WhatsApp, CRM e treinamento. Os detalhes dos serviços são definidos
             em contrato específico com cada cliente.
           </p>
           <h2 className="text-xl font-semibold text-slate-900 mt-8">3. Uso Aceitável</h2>

@@ -2,17 +2,17 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Calendar } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import Link from "next/link";
-import { WHATSAPP_URL, CALENDLY_URL } from "@/lib/constants";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const painPoints = [
-  "Muitos leads, poucos fechamentos?",
-  "Equipe comercial sem método?",
-  "CRM subutilizado ou desorganizado?",
-  "Gastando em tráfego sem ROI visível?",
-  "Atendimento lento perdendo vendas?",
-  "Dados espalhados sem visão única?",
+  "Leads chegam, mas nenhum fornecedor integra o funil do clique ao contrato?",
+  "Sua equipe é boa, mas opera no escuro — sem dados, sem pipeline claro?",
+  "Você paga CRM todo mês. Sua equipe atualiza por obrigação, não por utilidade?",
+  "Investiu em tráfego, mas não sabe qual campanha realmente gera venda?",
+  "Leads esfriam em minutos. Sua resposta leva horas?",
+  "Relatórios semanais que chegam tarde demais para mudar alguma coisa?",
 ];
 
 export function PainPoints() {
@@ -21,10 +21,10 @@ export function PainPoints() {
       <div className="section-container">
         <div className="text-center mb-16 space-y-6">
           <h2 id="pain-points-title" className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900">
-            Qual é a sua realidade hoje?
+            Se você se reconhece aqui, a conversa muda.
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">
-            Se você se identifica com alguma dessas situações, nossa metodologia pode ajudar a transformar.
+            Esses são os sinais de que sua operação comercial precisa de engenharia, não de mais ferramentas.
           </p>
         </div>
 
@@ -51,28 +51,17 @@ export function PainPoints() {
           className="text-center space-y-6"
         >
           <p className="text-xl font-bold text-slate-900">
-            Pronto para o próximo passo? É possível vender mais com método.
+            Se fez sentido, o próximo passo é um diagnóstico da sua operação.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="xl" className="group font-semibold" asChild>
-              <Link
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center"
-              >
-                Agendar Reunião
-                <Calendar className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
-            <Button size="xl" variant="outline" className="group font-semibold border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary" asChild>
               <Link
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
               >
-                WhatsApp
+                Falar com um Especialista
                 <MessageCircle className="ml-2 w-5 h-5" />
               </Link>
             </Button>

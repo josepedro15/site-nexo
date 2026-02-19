@@ -5,28 +5,28 @@ import { ArrowRight, MessageCircle, TrendingUp, Building2 } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 const heroData = {
-  badge: "Aceleradora de Vendas B2B/B2C",
+  badge: "Engenharia de Vendas para Empresas",
   title: (
     <>
-      Acelere suas Vendas com{" "}
-      <span className="text-primary">Inteligência Comercial</span>.
+      Operação comercial estagnada?{" "}
+      <span className="text-primary">Pare de contratar agências.</span>
     </>
   ),
   subtitle:
-    "Tráfego Pago, IA no WhatsApp, CRM e Treinamento integrados para gerar ROI real e previsível.",
+    "Não sabe se o gargalo está no tráfego, no funil ou no time? Implemente uma Engenharia de Vendas: tráfego, IA, CRM e capacitação integrados em um sistema previsível. R$ 700M+ em resultados gerados.",
   actions: [
     {
-      text: "Quero Acelerar Minhas Vendas",
+      text: "Falar com Engenheiro Comercial",
       href: "#contato",
       variant: "default" as const,
       icon: <ArrowRight className="h-5 w-5" />,
     },
     {
-      text: "WhatsApp",
-      href: WHATSAPP_URL,
+      text: "Ver a Metodologia",
+      href: "#metodologia",
       variant: "outline" as const,
       className: "border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary",
-      icon: <MessageCircle className="h-5 w-5" />,
+      icon: <ArrowRight className="h-5 w-5" />,
     },
   ],
   stats: [
@@ -36,15 +36,14 @@ const heroData = {
       icon: <TrendingUp className="h-5 w-5 text-slate-600" />,
     },
     {
-      value: "200",
-      label: "Empresas Aceleradas",
+      value: "200+",
+      label: "Empresas Atendidas",
       icon: <Building2 className="h-5 w-5 text-slate-600" />,
     },
   ],
   images: [
-    "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop",
+    "/hero/crpro-dashboard.png",
+    "/hero/metricsIA-dashboard.png",
   ],
 };
 
