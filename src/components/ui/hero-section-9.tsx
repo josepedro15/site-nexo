@@ -100,13 +100,13 @@ export function HeroSection9({
               </motion.div>
             )}
             <motion.h1
-              className="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-[1.1]"
+              className="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-[1.1] w-full"
               variants={itemVariants}
             >
               {title}
             </motion.h1>
             <motion.p
-              className="mt-4 sm:mt-6 max-w-xl text-base sm:text-lg text-slate-600 leading-relaxed"
+              className="mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed"
               variants={itemVariants}
             >
               {subtitle}
@@ -150,6 +150,7 @@ export function HeroSection9({
                 )
               )}
             </motion.div>
+            {stats.length > 0 && (
             <motion.div
               className="mt-8 sm:mt-12 flex flex-wrap justify-center gap-6 sm:gap-8 border-t border-slate-200 pt-6 sm:pt-8 lg:justify-start"
               variants={itemVariants}
@@ -166,6 +167,7 @@ export function HeroSection9({
                 </div>
               ))}
             </motion.div>
+            )}
           </motion.div>
 
           {/* Right Column: Image Collage */}

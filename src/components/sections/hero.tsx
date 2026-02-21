@@ -1,19 +1,19 @@
 "use client";
 
 import { HeroSection9 } from "@/components/ui/hero-section-9";
-import { ArrowRight, MessageCircle, TrendingUp, Building2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 const heroData = {
   badge: "Engenharia de Vendas para Empresas",
   title: (
     <>
-      Operação comercial estagnada?{" "}
-      <span className="text-primary">Pare de contratar agências.</span>
+      Substitua opinião por métricas e dados.{" "}
+      <span className="text-primary">Transforme aquisição e conversão em engenharia.</span>
     </>
   ),
   subtitle:
-    "Não sabe se o gargalo está no tráfego, no funil ou no time? Implemente uma Engenharia de Vendas: tráfego, IA, CRM e capacitação integrados em um sistema previsível. R$ 700M+ em resultados gerados.",
+    "Da primeira impressão ao fechamento, cada dente da engrenagem é calibrado com dados reais — eliminando ruído, improviso e decisões no escuro.",
   actions: [
     {
       text: "Falar com Engenheiro Comercial",
@@ -29,18 +29,7 @@ const heroData = {
       icon: <ArrowRight className="h-5 w-5" />,
     },
   ],
-  stats: [
-    {
-      value: "R$ 700M+",
-      label: "Em Vendas Geradas",
-      icon: <TrendingUp className="h-5 w-5 text-slate-600" />,
-    },
-    {
-      value: "200+",
-      label: "Empresas Atendidas",
-      icon: <Building2 className="h-5 w-5 text-slate-600" />,
-    },
-  ],
+  stats: [],
   images: [
     "/hero/crpro-dashboard.png",
     "/hero/metricsIA-dashboard.png",
